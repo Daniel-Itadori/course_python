@@ -10,3 +10,20 @@ It should tell them the interpretation of their BMI based on the BMI value.
     Equal to or over 35 they are clinically obese.
 The BMI is calculated by dividing a person's weight (in kg) by the square of their height (in m)
 """
+# User's weight and height
+weight = float(input('What is your weight in kg: '))
+height = float(input('What is your height in m: '))
+# compute the bmi
+bmi = weight/(height**2)
+
+if bmi < 18.5:
+    print('You under weight')
+elif bmi > 18.5 and bmi < 25:
+    print('You normal weight')
+elif bmi >= 25 and bmi < 30:
+    print('You slightly overweight')
+elif bmi >=30 and bmi < 35:
+    print('You are obese')
+else:
+    print('You are clinically obese')
+

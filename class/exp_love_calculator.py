@@ -11,3 +11,31 @@ For Love Scores between 40 and 50, the message should be:
 Otherwise, the message will just be their score. E.g.:
 "Your score is *z*."
 """
+name1 = input('What is the name1: ').upper()
+name2 = input('What is the name2: ').upper()
+names = name1 + name2
+print(names)
+
+T = names.count('T')
+R = names.count('R')
+U = names.count('U')
+E = names.count('E')
+
+times_true = T + R + U + E
+
+L = names.count('L')
+O = names.count('O')
+V = names.count('V')
+E = names.count('E')
+
+times_love = L + O + V + E
+
+score = str(times_true) + str(times_love)
+score = int(score)
+
+if score < 10 or score > 90:
+    print(f'Your score is {score}, you go together like coke and mentos.')
+elif 40 < score > 50:
+    print(f'Your score is {score}, you are alright together.')
+else:
+    print(f'BUUU! Your score is {score}')

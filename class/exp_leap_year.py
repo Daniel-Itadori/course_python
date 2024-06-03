@@ -10,3 +10,15 @@ To determine whether a year is a leap year, follow these steps:
     5. The year is not a leap year (it has 365 days).
 
 """
+# User's year
+year = int(input('Enter a year'))
+if year % 4 == 0:
+    if year % 100 == 0:
+        if year % 400 == 0:
+            print('The year is a leap year (it has 366 days).')
+        else:
+            print('The year is not a leap year (it has 365 days).')
+    else:
+        print('The year is a leap year (it has 366 days).')
+else:
+    print('The year is not a leap year (it has 365 days).')

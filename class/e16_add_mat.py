@@ -17,5 +17,21 @@ It should work something like this:
 Try to solve this exercise without using any third-party libraries (without using pandas, for example).
 
 """
-
+matrix1=[]
+matrix2=[]
+matrix3=[]
+n=int(input('Cuántas listas tendrán tus listas: '))
+for i in range(1,3):
+    for j in range(1, n+1):
+        l=int(input(f'Ingresa la lista #{j}, de la lista #{i}'))
+        if i==1:
+            matrix1.append(l)
+        else:
+            matrix2.append(l)
+for _ in matrix1:
+    for __ in matrix2:
+        matrix3.append(matrix1[_]+matrix2[__])
+print(matrix1)
+print(matrix2)
+print(matrix3)
 
